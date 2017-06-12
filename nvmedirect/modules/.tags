@@ -1,0 +1,315 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADMIN_TIMEOUT	nvmed.h	153;"	d
+DEV_ENTRY_TO_DEVICE	nvmed.h	36;"	d
+DEV_TO_ADMINQ	nvmed.h	138;"	d
+DEV_TO_ADMINQ	nvmed.h	139;"	d
+DEV_TO_ADMINQ	nvmed.h	44;"	d
+DEV_TO_ADMINQ	nvmed.h	83;"	d
+DEV_TO_ADMINQ	nvmed.h	90;"	d
+DEV_TO_HWSECTORS	nvmed.h	40;"	d
+DEV_TO_HWSECTORS	nvmed.h	85;"	d
+DEV_TO_HWSECTORS	nvmed.h	92;"	d
+DEV_TO_INSTANCE	nvmed.h	39;"	d
+DEV_TO_INSTANCE	nvmed.h	84;"	d
+DEV_TO_INSTANCE	nvmed.h	91;"	d
+DEV_TO_NS_LIST	nvmed.h	45;"	d
+DEV_TO_NS_LIST	nvmed.h	88;"	d
+DEV_TO_NS_LIST	nvmed.h	95;"	d
+DEV_TO_STRIPESIZE	nvmed.h	100;"	d
+DEV_TO_STRIPESIZE	nvmed.h	101;"	d
+DEV_TO_STRIPESIZE	nvmed.h	41;"	d
+DEV_TO_STRIPESIZE	nvmed.h	86;"	d
+DEV_TO_STRIPESIZE	nvmed.h	93;"	d
+DEV_TO_VWC	nvmed.h	42;"	d
+DEV_TO_VWC	nvmed.h	87;"	d
+DEV_TO_VWC	nvmed.h	94;"	d
+FALSE	nvmed.h	150;"	d
+KERNELDIR	Makefile	/^KERNELDIR := \/root\/linux.lightnvm$/;"	m
+KERNEL_VERSION_CODE	nvmed.h	33;"	d
+KERNEL_VERSION_MAJOR	Makefile	/^KERNEL_VERSION_MAJOR = $(shell $(MAKE) -C $(KERNELDIR) -s kernelversion | cut -f1 -d.)$/;"	m
+KERNEL_VERSION_MINOR	Makefile	/^KERNEL_VERSION_MINOR = $(shell $(MAKE) -C $(KERNELDIR) -s kernelversion | cut -f2 -d.)$/;"	m
+KERNEL_VERSION_PATCH	Makefile	/^KERNEL_VERSION_PATCH = $(shell $(MAKE) -C $(KERNELDIR) -s kernelversion | cut -f3 -d.)$/;"	m
+KERN_4100	nvmed.h	74;"	d
+KERN_4110	nvmed.h	78;"	d
+KERN_440	nvmed.h	50;"	d
+KERN_450	nvmed.h	54;"	d
+KERN_460	nvmed.h	58;"	d
+KERN_470	nvmed.h	62;"	d
+KERN_480	nvmed.h	66;"	d
+KERN_490	nvmed.h	70;"	d
+NS_ENTRY_TO_DEV	nvmed.h	37;"	d
+NVMED_DEBUG	nvmed.h	29;"	d
+NVMED_DEV_ENTRY	nvmed.h	/^} NVMED_DEV_ENTRY;$/;"	t	typeref:struct:nvmed_dev_entry
+NVMED_ERR	nvmed.h	27;"	d
+NVMED_GET_FEATURES	nvmed.h	111;"	d
+NVMED_GET_FEATURES	nvmed.h	120;"	d
+NVMED_GET_FEATURES	nvmed.h	129;"	d
+NVMED_INFO	nvmed.h	28;"	d
+NVMED_NS_ENTRY	nvmed.h	/^} NVMED_NS_ENTRY;$/;"	t	typeref:struct:nvmed_ns_entry
+NVMED_PROC_ROOT	nvmed.h	/^struct proc_dir_entry *NVMED_PROC_ROOT;$/;"	v	typeref:struct:proc_dir_entry
+NVMED_QUEUE_ENTRY	nvmed.h	/^} NVMED_QUEUE_ENTRY;$/;"	t	typeref:struct:nvmed_queue_entry
+NVMED_SET_FEATURES	nvmed.h	109;"	d
+NVMED_SET_FEATURES	nvmed.h	118;"	d
+NVMED_SET_FEATURES	nvmed.h	127;"	d
+NVMED_USER_QUOTA_ENTRY	nvmed.h	/^} NVMED_USER_QUOTA_ENTRY;$/;"	t	typeref:struct:nvmed_user_quota_entry
+NVME_CTRL_DEAD	nvme.h	/^	NVME_CTRL_DEAD,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_DELETING	nvme.h	/^	NVME_CTRL_DELETING,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_LIVE	nvme.h	/^	NVME_CTRL_LIVE,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_NEW	nvme.h	/^	NVME_CTRL_NEW,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_RECONNECTING	nvme.h	/^	NVME_CTRL_RECONNECTING,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_REMOVING	nvme.h	159;"	d
+NVME_CTRL_REMOVING	nvme.h	261;"	d
+NVME_CTRL_RESETTING	nvme.h	/^	NVME_CTRL_RESETTING,$/;"	e	enum:nvme_ctrl_state
+NVME_CTRL_RESETTING	nvme.h	158;"	d
+NVME_CTRL_RESETTING	nvme.h	260;"	d
+NVME_NS_DEAD	nvme.h	125;"	d
+NVME_NS_DEAD	nvme.h	226;"	d
+NVME_NS_DEAD	nvme.h	332;"	d
+NVME_NS_DEAD	nvme.h	444;"	d
+NVME_NS_DEAD	nvme.h	565;"	d
+NVME_NS_DEAD	nvme.h	688;"	d
+NVME_NS_DEAD	nvme.h	820;"	d
+NVME_NS_REMOVING	nvme.h	124;"	d
+NVME_NS_REMOVING	nvme.h	225;"	d
+NVME_NS_REMOVING	nvme.h	331;"	d
+NVME_NS_REMOVING	nvme.h	443;"	d
+NVME_NS_REMOVING	nvme.h	564;"	d
+NVME_NS_REMOVING	nvme.h	687;"	d
+NVME_NS_REMOVING	nvme.h	819;"	d
+PCI_CLASS_NVME	nvmed.h	31;"	d
+PWD	Makefile	/^PWD     := $(shell pwd)$/;"	m
+TRUE	nvmed.h	149;"	d
+_NVMED_MODULE_H	nvmed.h	18;"	d
+_NVMED_NVME_HEADER_H	nvme.h	2;"	d
+__this_module	nvmed.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	nvmed.mod.c	/^__used$/;"	v	file:
+abort_limit	nvme.h	/^	atomic_t abort_limit;$/;"	m	struct:nvme_ctrl
+abort_limit	nvme.h	/^	u16 abort_limit;$/;"	m	struct:nvme_dev
+adapter_alloc_cq	nvmed.c	/^static int adapter_alloc_cq(NVMED_DEV_ENTRY *dev_entry, u16 qid,$/;"	f	file:
+adapter_alloc_sq	nvmed.c	/^static int adapter_alloc_sq(NVMED_DEV_ENTRY *dev_entry, u16 qid,$/;"	f	file:
+adapter_delete_queue	nvmed.c	/^static int adapter_delete_queue(NVMED_DEV_ENTRY *dev_entry, u8 opcode, u16 id)$/;"	f	file:
+admin_q	nvme.h	/^	struct request_queue *admin_q;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::request_queue
+admin_q	nvme.h	/^	struct request_queue *admin_q;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::request_queue
+admin_tagset	nvme.h	/^	struct blk_mq_tag_set admin_tagset;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::blk_mq_tag_set
+admin_timeout	nvmed.h	/^unsigned char admin_timeout = 60;$/;"	v
+apsta	nvme.h	/^	u8 apsta;$/;"	m	struct:nvme_ctrl
+async_cmd_info	nvmed.h	/^struct async_cmd_info {$/;"	s
+async_event_work	nvme.h	/^	struct work_struct async_event_work;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::work_struct
+async_work	nvme.h	/^	struct work_struct async_work;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::work_struct
+bar	nvme.h	/^	struct nvme_bar __iomem *bar;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::__iomem
+bar	nvme.h	/^	void __iomem *bar;$/;"	m	struct:nvme_dev
+cmb	nvme.h	/^	void __iomem *cmb;$/;"	m	struct:nvme_dev
+cmb_dma_addr	nvme.h	/^	dma_addr_t cmb_dma_addr;$/;"	m	struct:nvme_dev
+cmb_size	nvme.h	/^	u64 cmb_size;$/;"	m	struct:nvme_dev
+cmbloc	nvme.h	/^	u32 cmbloc;$/;"	m	struct:nvme_dev
+cmbsz	nvme.h	/^	u32 cmbsz;$/;"	m	struct:nvme_dev
+cntlid	nvme.h	/^	int cntlid;$/;"	m	struct:nvme_ctrl
+cntlid	nvme.h	/^	u16 cntlid;$/;"	m	struct:nvme_ctrl
+connect_q	nvme.h	/^	struct request_queue *connect_q;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::request_queue
+cq_dma_addr	nvmed.h	/^	dma_addr_t cq_dma_addr;$/;"	m	struct:nvme_queue
+cq_head	nvmed.h	/^	u16 cq_head;$/;"	m	struct:nvme_queue
+cq_phase	nvmed.h	/^	u8 cq_phase;$/;"	m	struct:nvme_queue
+cqe_seen	nvmed.h	/^	u8 cqe_seen;$/;"	m	struct:nvme_queue
+cqes	nvmed.h	/^	volatile struct nvme_completion *cqes;$/;"	m	struct:nvme_queue	typeref:struct:nvme_queue::nvme_completion
+ctrl	nvme.h	/^	struct nvme_ctrl *ctrl;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::nvme_ctrl
+ctrl	nvme.h	/^	struct nvme_ctrl ctrl;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::nvme_ctrl
+ctrl_config	nvme.h	/^	u32 ctrl_config;$/;"	m	struct:nvme_ctrl
+ctrl_config	nvme.h	/^	u32 ctrl_config;$/;"	m	struct:nvme_dev
+ctrl_lock	nvmed.h	/^	spinlock_t ctrl_lock;$/;"	m	struct:nvmed_dev_entry
+ctx	nvmed.h	/^	void *ctx;$/;"	m	struct:async_cmd_info
+db_stride	nvme.h	/^	u32 db_stride;$/;"	m	struct:nvme_dev
+dbs	nvme.h	/^	u32 __iomem *dbs;$/;"	m	struct:nvme_dev
+dev	nvme.h	/^	struct device *dev;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::device
+dev	nvme.h	/^	struct device *dev;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::device
+dev	nvme.h	/^	struct nvme_dev *dev;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::nvme_dev
+dev	nvmed.h	/^	struct nvme_dev *dev;$/;"	m	struct:nvme_queue	typeref:struct:nvme_queue::nvme_dev
+dev	nvmed.h	/^	struct nvme_dev *dev;$/;"	m	struct:nvmed_dev_entry	typeref:struct:nvmed_dev_entry::nvme_dev
+dev_entry	nvmed.h	/^	NVMED_DEV_ENTRY *dev_entry;$/;"	m	struct:nvmed_ns_entry
+device	nvme.h	/^	struct device *device;	\/* char device *\/$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::device
+device	nvme.h	/^	struct device *device;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::device
+disk	nvme.h	/^	struct gendisk *disk;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::gendisk
+entry	nvme.h	/^	struct msix_entry *entry;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::msix_entry
+eui	nvme.h	/^	u8 eui[8];$/;"	m	struct:nvme_ns
+event_limit	nvme.h	/^	u8 event_limit;$/;"	m	struct:nvme_ctrl
+event_limit	nvme.h	/^	u8 event_limit;$/;"	m	struct:nvme_dev
+ext	nvme.h	/^	bool ext;$/;"	m	struct:nvme_ns
+firmware_rev	nvme.h	/^	char firmware_rev[8];$/;"	m	struct:nvme_ctrl
+firmware_rev	nvme.h	/^	char firmware_rev[8];$/;"	m	struct:nvme_dev
+flags	nvme.h	/^	unsigned long flags;$/;"	m	struct:nvme_dev
+flags	nvme.h	/^	unsigned long flags;$/;"	m	struct:nvme_ns
+get_queue_count	nvmed.c	/^static int get_queue_count(NVMED_DEV_ENTRY *dev_entry)$/;"	f	file:
+icdoff	nvme.h	/^	u16 icdoff;$/;"	m	struct:nvme_ctrl
+identified	nvme.h	/^	bool identified;$/;"	m	struct:nvme_ctrl
+instance	nvme.h	/^	int instance;$/;"	m	struct:nvme_ctrl
+instance	nvme.h	/^	int instance;$/;"	m	struct:nvme_dev
+instance	nvme.h	/^	int instance;$/;"	m	struct:nvme_ns
+ioccsz	nvme.h	/^	u32 ioccsz;$/;"	m	struct:nvme_ctrl
+ioq_wait	nvme.h	/^	struct completion ioq_wait;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::completion
+iorcsz	nvme.h	/^	u32 iorcsz;$/;"	m	struct:nvme_ctrl
+ka_work	nvme.h	/^	struct delayed_work ka_work;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::delayed_work
+kas	nvme.h	/^	u16 kas;$/;"	m	struct:nvme_ctrl
+kato	nvme.h	/^	unsigned int kato;$/;"	m	struct:nvme_ctrl
+kref	nvme.h	/^	struct kref kref;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::kref
+kref	nvme.h	/^	struct kref kref;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::kref
+kref	nvme.h	/^	struct kref kref;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::kref
+lba_shift	nvme.h	/^	int lba_shift;$/;"	m	struct:nvme_ns
+list	nvme.h	/^	struct list_head list;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::list_head
+list	nvmed.h	/^	struct list_head list;$/;"	m	struct:nvmed_dev_entry	typeref:struct:nvmed_dev_entry::list_head
+list	nvmed.h	/^	struct list_head list;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::list_head
+list	nvmed.h	/^	struct list_head list;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::list_head
+list	nvmed.h	/^	struct list_head list;$/;"	m	struct:nvmed_user_quota_entry	typeref:struct:nvmed_user_quota_entry::list_head
+lock	nvme.h	/^	spinlock_t lock;$/;"	m	struct:nvme_ctrl
+max_hw_sectors	nvme.h	/^	u32 max_hw_sectors;$/;"	m	struct:nvme_ctrl
+max_hw_sectors	nvme.h	/^	u32 max_hw_sectors;$/;"	m	struct:nvme_dev
+max_qid	nvme.h	/^	unsigned max_qid;$/;"	m	struct:nvme_dev
+maxcmd	nvme.h	/^	u16 maxcmd;$/;"	m	struct:nvme_ctrl
+mode_select_block_len	nvme.h	/^	u32 mode_select_block_len;$/;"	m	struct:nvme_ns
+mode_select_num_blocks	nvme.h	/^	u64 mode_select_num_blocks;$/;"	m	struct:nvme_ns
+model	nvme.h	/^	char model[40];$/;"	m	struct:nvme_ctrl
+model	nvme.h	/^	char model[40];$/;"	m	struct:nvme_dev
+ms	nvme.h	/^	u16 ms;$/;"	m	struct:nvme_ns
+name	nvme.h	/^	char name[12];$/;"	m	struct:nvme_ctrl
+name	nvme.h	/^	char name[12];$/;"	m	struct:nvme_dev
+namespaces	nvme.h	/^	struct list_head namespaces;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::list_head
+namespaces	nvme.h	/^	struct list_head namespaces;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::list_head
+namespaces_mutex	nvme.h	/^	struct mutex namespaces_mutex;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::mutex
+ndev	nvme.h	/^	struct nvm_dev *ndev;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::nvm_dev
+node	nvme.h	/^	struct list_head node;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::list_head
+node	nvme.h	/^	struct list_head node;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::list_head
+npss	nvme.h	/^	u8 npss;$/;"	m	struct:nvme_ctrl
+nr_sects	nvmed.h	/^	sector_t nr_sects;$/;"	m	struct:nvmed_ns_entry
+ns	nvmed.h	/^	struct nvme_ns *ns;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::nvme_ns
+ns_entry	nvmed.h	/^	NVMED_NS_ENTRY *ns_entry;$/;"	m	struct:nvmed_queue_entry
+ns_id	nvme.h	/^	unsigned ns_id;$/;"	m	struct:nvme_ns
+ns_ida	nvme.h	/^	struct ida ns_ida;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::ida
+ns_list	nvmed.h	/^	struct list_head ns_list;$/;"	m	struct:nvmed_dev_entry	typeref:struct:nvmed_dev_entry::list_head
+ns_proc_root	nvmed.h	/^	struct proc_dir_entry *ns_proc_root;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::proc_dir_entry
+num_user_queue	nvmed.h	/^	unsigned int num_user_queue;$/;"	m	struct:nvmed_dev_entry
+nvme_ctrl	nvme.h	/^struct nvme_ctrl {$/;"	s
+nvme_ctrl_state	nvme.h	/^enum nvme_ctrl_state {$/;"	g
+nvme_dev	nvme.h	/^struct nvme_dev {$/;"	s
+nvme_ns	nvme.h	/^struct nvme_ns {$/;"	s
+nvme_queue	nvmed.h	/^struct nvme_queue {$/;"	s
+nvme_queue_cq_fops	nvmed.c	/^static const struct file_operations nvme_queue_cq_fops = {$/;"	v	typeref:struct:file_operations	file:
+nvme_queue_db_fops	nvmed.c	/^static const struct file_operations nvme_queue_db_fops = {$/;"	v	typeref:struct:file_operations	file:
+nvme_queue_sq_fops	nvmed.c	/^static const struct file_operations nvme_queue_sq_fops = {$/;"	v	typeref:struct:file_operations	file:
+nvmed_admin_ioctl	nvmed.c	/^static long nvmed_admin_ioctl(struct file *file, unsigned int cmd, unsigned long arg) {$/;"	f	file:
+nvmed_alloc_queue	nvmed.c	/^static struct nvme_queue *nvmed_alloc_queue(NVMED_DEV_ENTRY *dev_entry, int qid, int depth) {$/;"	f	file:
+nvmed_cleanup	nvmed.c	/^module_exit(nvmed_cleanup);$/;"	v
+nvmed_cleanup	nvmed.c	/^static void __exit nvmed_cleanup(void)$/;"	f	file:
+nvmed_create_queue	nvmed.c	/^static int nvmed_create_queue(NVMED_QUEUE_ENTRY *queue_entry, int qid) {$/;"	f	file:
+nvmed_dev_entry	nvmed.h	/^typedef struct nvmed_dev_entry {$/;"	s
+nvmed_disable_queue	nvmed.c	/^void nvmed_disable_queue(NVMED_DEV_ENTRY *dev_entry, NVMED_QUEUE_ENTRY *queue_entry) {$/;"	f
+nvmed_get_buffer_addr	nvmed.c	/^static int nvmed_get_buffer_addr(NVMED_NS_ENTRY *ns_entry, NVMED_BUF* __user *__buf) {$/;"	f	file:
+nvmed_get_device_info	nvmed.c	/^static int nvmed_get_device_info(NVMED_NS_ENTRY *ns_entry, $/;"	f	file:
+nvmed_get_features	nvmed.c	/^static int nvmed_get_features(NVMED_DEV_ENTRY *dev_entry, unsigned fid, u32 *result)$/;"	f	file:
+nvmed_get_features_fn	nvmed.h	/^	int (*nvmed_get_features_fn)(struct nvme_ctrl *dev, unsigned fid, unsigned nsid,$/;"	v
+nvmed_get_features_fn	nvmed.h	/^	int (*nvmed_get_features_fn)(struct nvme_dev *dev, unsigned fid, unsigned nsid,$/;"	v
+nvmed_get_queue_from_qid	nvmed.c	/^static NVMED_QUEUE_ENTRY* nvmed_get_queue_from_qid(NVMED_NS_ENTRY *ns_entry, $/;"	f	file:
+nvmed_get_remain_user_quota	nvmed.c	/^static int nvmed_get_remain_user_quota(NVMED_NS_ENTRY *ns_entry, kuid_t uid) {$/;"	f	file:
+nvmed_get_user	nvmed.c	/^static int nvmed_get_user(NVMED_NS_ENTRY *ns_entry, NVMED_USER_QUOTA __user *__quota) {$/;"	f	file:
+nvmed_get_user_quota	nvmed.c	/^static NVMED_USER_QUOTA_ENTRY* nvmed_get_user_quota(NVMED_NS_ENTRY *ns_entry, kuid_t uid) {$/;"	f	file:
+nvmed_init	nvmed.c	/^module_init(nvmed_init);$/;"	v
+nvmed_init	nvmed.c	/^static int __init nvmed_init(void)$/;"	f	file:
+nvmed_ns_entry	nvmed.h	/^typedef struct nvmed_ns_entry {$/;"	s
+nvmed_ns_fops	nvmed.c	/^static const struct file_operations nvmed_ns_fops = {$/;"	v	typeref:struct:file_operations	file:
+nvmed_queue_cq_proc_mmap	nvmed.c	/^static int nvmed_queue_cq_proc_mmap(struct file *filp, struct vm_area_struct *vma) {$/;"	f	file:
+nvmed_queue_create	nvmed.c	/^static int nvmed_queue_create(NVMED_NS_ENTRY *ns_entry, unsigned int __user *__qid) {$/;"	f	file:
+nvmed_queue_db_proc_mmap	nvmed.c	/^static int nvmed_queue_db_proc_mmap(struct file *filp, struct vm_area_struct *vma) {$/;"	f	file:
+nvmed_queue_delete	nvmed.c	/^static int nvmed_queue_delete(NVMED_NS_ENTRY *ns_entry, unsigned int __user *__qid) {$/;"	f	file:
+nvmed_queue_entry	nvmed.h	/^typedef struct nvmed_queue_entry {$/;"	s
+nvmed_queue_proc_open	nvmed.c	/^static int nvmed_queue_proc_open(struct inode *inode, struct file *filp) {$/;"	f	file:
+nvmed_queue_sq_proc_mmap	nvmed.c	/^static int nvmed_queue_sq_proc_mmap(struct file *filp, struct vm_area_struct *vma) {$/;"	f	file:
+nvmed_scan_device	nvmed.c	/^static NVMED_RESULT nvmed_scan_device(void) {$/;"	f	file:
+nvmed_set_features	nvmed.c	/^static int nvmed_set_features(NVMED_DEV_ENTRY *dev_entry, unsigned fid, unsigned dword11,$/;"	f	file:
+nvmed_set_features_fn	nvmed.h	/^	int (*nvmed_set_features_fn)(struct nvme_ctrl *dev, unsigned fid, unsigned dword11,$/;"	v
+nvmed_set_features_fn	nvmed.h	/^	int (*nvmed_set_features_fn)(struct nvme_dev *dev, unsigned fid, unsigned dword11,$/;"	v
+nvmed_set_user	nvmed.c	/^static int nvmed_set_user(NVMED_NS_ENTRY *ns_entry, NVMED_USER_QUOTA __user *__quota) {$/;"	f	file:
+nvmed_set_user_quota	nvmed.c	/^static int nvmed_set_user_quota(NVMED_NS_ENTRY *ns_entry, kuid_t uid, unsigned __quota) {$/;"	f	file:
+nvmed_set_user_used_quota	nvmed.c	/^static int nvmed_set_user_used_quota(NVMED_NS_ENTRY *ns_entry, kuid_t uid, bool isInc) {$/;"	f	file:
+nvmed_submit_cmd	nvmed.h	/^int (*nvmed_submit_cmd)(struct nvme_dev *, struct nvme_command *, $/;"	v
+nvmed_submit_cmd_mq	nvmed.h	/^	int (*nvmed_submit_cmd_mq)(struct request_queue *q, struct nvme_command *cmd,$/;"	v
+nvmed_submit_cmd_mq	nvmed.h	/^	int (*nvmed_submit_cmd_mq)(void *x, ...);$/;"	v
+nvmed_submit_sync_cmd	nvmed.c	/^int nvmed_submit_sync_cmd(struct nvme_dev *dev, struct nvme_command* cmd, $/;"	f
+nvmed_user_quota_entry	nvmed.h	/^typedef struct nvmed_user_quota_entry {$/;"	s
+nvmeq	nvmed.h	/^	struct nvme_queue* nvmeq;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::nvme_queue
+oacs	nvme.h	/^	u16 oacs;$/;"	m	struct:nvme_ctrl
+obj-m	Makefile	/^obj-m   := nvmed.o$/;"	m
+oncs	nvme.h	/^	u16 oncs;$/;"	m	struct:nvme_ctrl
+oncs	nvme.h	/^	u16 oncs;$/;"	m	struct:nvme_dev
+online_queues	nvme.h	/^	unsigned online_queues;$/;"	m	struct:nvme_dev
+opal_dev	nvme.h	/^	struct opal_dev *opal_dev;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::opal_dev
+ops	nvme.h	/^	const struct nvme_ctrl_ops *ops;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::nvme_ctrl_ops
+opts	nvme.h	/^	struct nvmf_ctrl_options *opts;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::nvmf_ctrl_options
+owner	nvmed.h	/^	kuid_t owner;$/;"	m	struct:nvmed_queue_entry
+page_size	nvme.h	/^	u32 page_size;$/;"	m	struct:nvme_ctrl
+page_size	nvme.h	/^	u32 page_size;$/;"	m	struct:nvme_dev
+partno	nvmed.h	/^	int partno;$/;"	m	struct:nvmed_ns_entry
+pdev	nvmed.h	/^	struct pci_dev *pdev;$/;"	m	struct:nvmed_dev_entry	typeref:struct:nvmed_dev_entry::pci_dev
+pi_type	nvme.h	/^	u8 pi_type;$/;"	m	struct:nvme_ns
+probe_work	nvme.h	/^	struct work_struct probe_work;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::work_struct
+proc_admin	nvmed.h	/^	struct proc_dir_entry *proc_admin;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::proc_dir_entry
+proc_cq	nvmed.h	/^	struct proc_dir_entry *proc_cq;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::proc_dir_entry
+proc_db	nvmed.h	/^	struct proc_dir_entry *proc_db;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::proc_dir_entry
+proc_sq	nvmed.h	/^	struct proc_dir_entry *proc_sq;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::proc_dir_entry
+proc_sysfs_link	nvmed.h	/^	struct proc_dir_entry *proc_sysfs_link;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::proc_dir_entry
+prp_page_pool	nvme.h	/^	struct dma_pool *prp_page_pool;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::dma_pool
+prp_small_pool	nvme.h	/^	struct dma_pool *prp_small_pool;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::dma_pool
+ps_max_latency_us	nvme.h	/^	u64 ps_max_latency_us;$/;"	m	struct:nvme_ctrl
+q_db	nvmed.h	/^	u32 __iomem *q_db;$/;"	m	struct:nvme_queue
+q_depth	nvme.h	/^	int q_depth;$/;"	m	struct:nvme_dev
+q_depth	nvmed.h	/^	u16 q_depth;$/;"	m	struct:nvme_queue
+q_dmadev	nvmed.h	/^	struct device *q_dmadev;$/;"	m	struct:nvme_queue	typeref:struct:nvme_queue::device
+q_lock	nvmed.h	/^	spinlock_t q_lock;$/;"	m	struct:nvme_queue
+qid	nvmed.h	/^	u16 qid;$/;"	m	struct:nvme_queue
+queue	nvme.h	/^	struct request_queue *queue;$/;"	m	struct:nvme_ns	typeref:struct:nvme_ns::request_queue
+queue_count	nvme.h	/^	unsigned queue_count;$/;"	m	struct:nvme_dev
+queue_list	nvmed.h	/^	struct list_head queue_list;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::list_head
+queue_max	nvmed.h	/^	unsigned int queue_max;$/;"	m	struct:nvmed_user_quota_entry
+queue_proc_root	nvmed.h	/^	struct proc_dir_entry *queue_proc_root;$/;"	m	struct:nvmed_queue_entry	typeref:struct:nvmed_queue_entry::proc_dir_entry
+queue_used	nvmed.h	/^	unsigned int queue_used;$/;"	m	struct:nvmed_user_quota_entry
+queues	nvme.h	/^	struct nvme_queue **queues;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::nvme_queue
+quirks	nvme.h	/^	unsigned long quirks;$/;"	m	struct:nvme_ctrl
+remove_work	nvme.h	/^	struct work_struct remove_work;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::work_struct
+req	nvmed.h	/^	struct request *req;$/;"	m	struct:async_cmd_info	typeref:struct:async_cmd_info::request
+reset_work	nvme.h	/^	struct work_struct reset_work;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::work_struct
+result	nvmed.h	/^	u32 result;$/;"	m	struct:async_cmd_info
+scan_work	nvme.h	/^	struct work_struct scan_work;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::work_struct
+scan_work	nvme.h	/^	struct work_struct scan_work;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::work_struct
+serial	nvme.h	/^	char serial[20];$/;"	m	struct:nvme_ctrl
+serial	nvme.h	/^	char serial[20];$/;"	m	struct:nvme_dev
+set_queue_count	nvmed.c	/^static int set_queue_count(NVMED_DEV_ENTRY *dev_entry, int count, int *err)$/;"	f	file:
+sgls	nvme.h	/^	u32 sgls;$/;"	m	struct:nvme_ctrl
+shutdown_lock	nvme.h	/^	struct mutex shutdown_lock;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::mutex
+sq_cmds	nvmed.h	/^	struct nvme_command *sq_cmds;$/;"	m	struct:nvme_queue	typeref:struct:nvme_queue::nvme_command
+sq_cmds_io	nvmed.h	/^	struct nvme_command __iomem *sq_cmds_io;$/;"	m	struct:nvme_queue	typeref:struct:nvme_queue::__iomem
+sq_dma_addr	nvmed.h	/^	dma_addr_t sq_dma_addr;$/;"	m	struct:nvme_queue
+sq_head	nvmed.h	/^	u16 sq_head;$/;"	m	struct:nvme_queue
+sq_tail	nvmed.h	/^	u16 sq_tail;$/;"	m	struct:nvme_queue
+sqsize	nvme.h	/^	u16 sqsize;$/;"	m	struct:nvme_ctrl
+start_sect	nvmed.h	/^	sector_t start_sect;$/;"	m	struct:nvmed_ns_entry
+state	nvme.h	/^	enum nvme_ctrl_state state;$/;"	m	struct:nvme_ctrl	typeref:enum:nvme_ctrl::nvme_ctrl_state
+state	nvme.h	/^	int state;$/;"	m	struct:nvme_ctrl
+status	nvmed.h	/^	int status;$/;"	m	struct:async_cmd_info
+stripe_size	nvme.h	/^	u32 stripe_size;$/;"	m	struct:nvme_ctrl
+stripe_size	nvme.h	/^	u32 stripe_size;$/;"	m	struct:nvme_dev
+subsystem	nvme.h	/^	bool subsystem;$/;"	m	struct:nvme_ctrl
+subsystem	nvme.h	/^	bool subsystem;$/;"	m	struct:nvme_dev
+tagset	nvme.h	/^	struct blk_mq_tag_set *tagset;$/;"	m	struct:nvme_ctrl	typeref:struct:nvme_ctrl::blk_mq_tag_set
+tagset	nvme.h	/^	struct blk_mq_tag_set tagset;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::blk_mq_tag_set
+type	nvme.h	/^	int type;$/;"	m	struct:nvme_ns
+uid	nvmed.h	/^	kuid_t uid;$/;"	m	struct:nvmed_user_quota_entry
+user_list	nvmed.h	/^	struct list_head user_list;$/;"	m	struct:nvmed_ns_entry	typeref:struct:nvmed_ns_entry::list_head
+uuid	nvme.h	/^	u8 uuid[16];$/;"	m	struct:nvme_ns
+vid	nvme.h	/^	u16 vid;$/;"	m	struct:nvme_ctrl
+vs	nvme.h	/^	u32 vs;$/;"	m	struct:nvme_ctrl
+vwc	nvme.h	/^	u8 vwc;$/;"	m	struct:nvme_ctrl
+vwc	nvme.h	/^	u8 vwc;$/;"	m	struct:nvme_dev
+watchdog_timer	nvme.h	/^	struct timer_list watchdog_timer;$/;"	m	struct:nvme_dev	typeref:struct:nvme_dev::timer_list
+work	nvmed.h	/^	struct kthread_work work;$/;"	m	struct:async_cmd_info	typeref:struct:async_cmd_info::kthread_work
+worker	nvmed.h	/^	struct kthread_worker *worker;$/;"	m	struct:async_cmd_info	typeref:struct:async_cmd_info::kthread_worker
