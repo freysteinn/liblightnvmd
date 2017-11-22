@@ -106,10 +106,10 @@ extern "C" {
 #define HtoQ(handle) 	handle->queue
 #define HtoD(handle) 	QtoD(HtoQ(handle))
 
-        typedef enum {
-                NVMED_FALSE = 0,
-                NVMED_TRUE = 1,
-        } NVMED_BOOL;
+typedef enum {
+	NVMED_FALSE = 0,
+	NVMED_TRUE = 1,
+} NVMED_BOOL;
 
 #define FLAG_SET(obj, items) (obj)->flags |= items
 #define FLAG_SET_FORCE(obj, items) (obj)->flags = items
@@ -125,219 +125,219 @@ extern "C" {
 #define DEC_SYNC(obj)	__sync_sub_and_fetch(&obj, 1);
 #define INIT_SYNC(obj)	__sync_and_and_fetch(&obj, 0);
 
-        typedef __u64 u64;
-        typedef __u32 u32;
-        typedef __u16 u16;
-        typedef __u8  u8;
+typedef __u64 u64;
+typedef __u32 u32;
+typedef __u16 u16;
+typedef __u8  u8;
 
 //FLAGS for NVMED
-        enum {
-                NVMED_NO_CACHE			= 1 << 0,
-                NVMED_CACHE_SIZE		= 1	<< 1,
-                NVMED_CACHE_LAZY_INIT	= 1	<< 2,
+enum {
+	NVMED_NO_CACHE			= 1 << 0,
+	NVMED_CACHE_SIZE		= 1	<< 1,
+	NVMED_CACHE_LAZY_INIT	= 1	<< 2,
 
-                NVMED_NUM_FLAGS			= 3,
-        };
+	NVMED_NUM_FLAGS			= 3,
+};
 
 //FLAGS For NVMED_HANDLE
-        enum {
-                HANDLE_DIRECT_IO		= 1 << 0,
-                HANDLE_SYNC_IO			= 1 << 1,
+enum {
+	HANDLE_DIRECT_IO		= 1 << 0,
+	HANDLE_SYNC_IO			= 1 << 1,
 
-                HANDLE_HINT_DMEM 		= 1 << 2,
+	HANDLE_HINT_DMEM 		= 1 << 2,
 
-                HANDLE_MQ				= 1 << 3,
+	HANDLE_MQ				= 1 << 3,
 
-                HANDLE_NUM_FLAGS		= 4,
-        };
+	HANDLE_NUM_FLAGS		= 4,
+};
 
 //STATUS for Process CQ, IOSCHED thread
-        enum {
-                TD_STATUS_RUNNING		= 1 << 0,
-                TD_STATUS_REQ_STOP		= 1 << 1,
-                TD_STATUS_STOP			= 1 << 2,
-                TD_STATUS_REQ_SUSPEND	= 1 << 3,
-                TD_STATUS_SUSPEND		= 1 << 4,
+enum {
+	TD_STATUS_RUNNING		= 1 << 0,
+	TD_STATUS_REQ_STOP		= 1 << 1,
+	TD_STATUS_STOP			= 1 << 2,
+	TD_STATUS_REQ_SUSPEND	= 1 << 3,
+	TD_STATUS_SUSPEND		= 1 << 4,
 
-                TD_STATUS_NUM_FLAGS		= 5,
-        };
+	TD_STATUS_NUM_FLAGS		= 5,
+};
 
 //FLAGS For NVMED_CACHE
-        enum {
-                CACHE_UNINIT			= 0,
-                CACHE_LOCKED			= 1 << 0,
-                CACHE_FREE				= 1 << 1,
-                CACHE_LRU				= 1 << 2,
-                CACHE_DIRTY				= 1 << 3,
-                CACHE_UPTODATE			= 1 << 4,
-                CACHE_WRITEBACK			= 1 << 5,
+enum {
+	CACHE_UNINIT			= 0,
+	CACHE_LOCKED			= 1 << 0,
+	CACHE_FREE				= 1 << 1,
+	CACHE_LRU				= 1 << 2,
+	CACHE_DIRTY				= 1 << 3,
+	CACHE_UPTODATE			= 1 << 4,
+	CACHE_WRITEBACK			= 1 << 5,
 
-                CACHE_NUM_FLAGS			= 6,
-        };
+	CACHE_NUM_FLAGS			= 6,
+};
 
 //STATUS FOR IOD
-        enum {
-                IO_INIT					= 1 << 0,
-                IO_COMPLETE				= 1	<< 1,
-                IO_ERROR				= 1 << 2,
+enum {
+	IO_INIT					= 1 << 0,
+	IO_COMPLETE				= 1	<< 1,
+	IO_ERROR				= 1 << 2,
 
-                IO_NUM_FLAGS			= 3,
-        };
+	IO_NUM_FLAGS			= 3,
+};
 
 //FLAGS FOR AIO
-        enum {
-                NVMED_AIO_ERROR			= 1 << 0,
-                NVMED_AIO_BUSY			= 1	<< 1,
-                NVMED_AIO_QUEUED		= 1	<< 2,
+enum {
+	NVMED_AIO_ERROR			= 1 << 0,
+	NVMED_AIO_BUSY			= 1	<< 1,
+	NVMED_AIO_QUEUED		= 1	<< 2,
 
-                NVMED_AIO_STATUS		= 3,
-        };
+	NVMED_AIO_STATUS		= 3,
+};
 
-        enum {
-                AIO_INIT				= 0,
-                AIO_PROCESS			 	= 1 << 1,
-                AIO_COMPLETE			= 1 << 2,
+enum {
+	AIO_INIT				= 0,
+	AIO_PROCESS			 	= 1 << 1,
+	AIO_COMPLETE			= 1 << 2,
 
-                AIO_NUM_FLAGS			= 3,
-        };
+	AIO_NUM_FLAGS			= 3,
+};
 
-        typedef struct nvmed_device_info NVMED_DEVICE_INFO;
+typedef struct nvmed_device_info NVMED_DEVICE_INFO;
 
-        typedef struct nvmed {
-                char*	ns_path;
-                int 	ns_fd;
-                u32 	flags;
+typedef struct nvmed {
+	char*	ns_path;
+	int 	ns_fd;
+	u32 	flags;
 
-                NVMED_DEVICE_INFO *dev_info;
+	NVMED_DEVICE_INFO *dev_info;
 
-                pthread_spinlock_t 	mngt_lock;
+	pthread_spinlock_t 	mngt_lock;
 
-                int numQueue;
-                struct nvmed_queue** queue_list;
-                int usedQueues;
+	int numQueue;
+	struct nvmed_queue** queue_list;
+        int usedQueues;
 
-                pthread_t process_cq_td;
-                volatile unsigned int process_cq_status;
-                pthread_mutex_t process_cq_mutex;
-                pthread_cond_t  process_cq_cond;
+	pthread_t process_cq_td;
+	volatile unsigned int process_cq_status;
+	pthread_mutex_t process_cq_mutex;
+	pthread_cond_t  process_cq_cond;
 
-        } NVMED;
+} NVMED;
 
-        typedef struct nvmed_queue {
-                NVMED* 	nvmed;
-                u32 	flags;
+typedef struct nvmed_queue {
+	NVMED* 	nvmed;
+	u32 	flags;
 
-                pthread_spinlock_t 	mngt_lock;
-                //pthread_spinlock_t 	sq_lock;
-                pthread_spinlock_t 	cq_lock;
-                pthread_mutex_t queue_lock;
+	pthread_spinlock_t 	mngt_lock;
+	//pthread_spinlock_t 	sq_lock;
+	pthread_spinlock_t 	cq_lock;
+        pthread_mutex_t queue_lock;
 
-                u16 qid;
-                u32 q_depth;
+	u16 qid;
+	u32 q_depth;
 
-                int sq_fd;
-                int cq_fd;
-                int db_fd;
-                struct nvme_command 	*sq_cmds;
-                volatile struct nvme_completion *cqes;
-                volatile struct nvme_completion *cqe;
-                void *dbs;
-                u32 *sq_db;
-                u32 *cq_db;
+	int sq_fd;
+	int cq_fd;
+	int db_fd;
+	struct nvme_command 	*sq_cmds;
+	volatile struct nvme_completion *cqes;
+	volatile struct nvme_completion *cqe;
+	void *dbs;
+	u32 *sq_db;
+	u32 *cq_db;
 
-                u16 sq_head, sq_tail, cq_head;
-                u8 cq_phase, cqe_seen;
+	u16 sq_head, sq_tail, cq_head;
+	u8 cq_phase, cqe_seen;
 
-                struct nvmed_iod* iod_arr;
-                unsigned int	  iod_pos;
+	struct nvmed_iod* iod_arr;
+	unsigned int	  iod_pos;
 
-                u16 nextid;
+	u16 nextid;
 
-                unsigned int aio_q_head;
-        } NVMED_QUEUE;
+	unsigned int aio_q_head;
+} NVMED_QUEUE;
 
-        typedef struct nvmed_handle {
-                struct nvmed_queue* queue;
-                struct nvmed_queue** queue_mq;
-                u32	flags;
+typedef struct nvmed_handle {
+	struct nvmed_queue* queue;
+	struct nvmed_queue** queue_mq;
+	u32	flags;
 
-                ssize_t (*read_func)(struct nvmed_handle*, u8, 
-                                     void*, unsigned long, unsigned int, void*);
-                ssize_t (*write_func)(struct nvmed_handle*, u8, 
-                                      void*, unsigned long, unsigned int, void*);
+	ssize_t (*read_func)(struct nvmed_handle*, u8, 
+			void*, unsigned long, unsigned int, void*);
+	ssize_t (*write_func)(struct nvmed_handle*, u8, 
+			void*, unsigned long, unsigned int, void*);
 
-                off_t	offset;
-                off_t bufOffs;
+	off_t	offset;
+	off_t bufOffs;
 
-                int num_mq;
-                NVMED_QUEUE* (*mq_get_queue)(struct nvmed_handle*, u8, 
-                                             unsigned long, unsigned int);
+	int num_mq;
+	NVMED_QUEUE* (*mq_get_queue)(struct nvmed_handle*, u8, 
+			unsigned long, unsigned int);
 
-                pthread_spinlock_t prpBuf_lock;
-                void** prpBuf;
-                u64* pa_prpBuf;
-                int prpBuf_size;
-                int prpBuf_curr;
-                int prpBuf_head;
-                int prpBuf_tail;
-        } NVMED_HANDLE;
+	pthread_spinlock_t prpBuf_lock;
+	void** prpBuf;
+	u64* pa_prpBuf;
+	int prpBuf_size;
+	int prpBuf_curr;
+	int prpBuf_head;
+	int prpBuf_tail;
+} NVMED_HANDLE;
 
-        typedef struct nvmed_aio_ctx {
-                NVMED_HANDLE* handle;
-                off_t start_lba;
-                size_t len;
-                void* buf;
-                u64* prpList;
+typedef struct nvmed_aio_ctx {
+	NVMED_HANDLE* handle;
+	off_t start_lba;
+	size_t len;
+	void* buf;
+	u64* prpList;
 
-                u8 opcode;
-                volatile int status;
-                int num_init_io;
-                int num_complete_io;
+	u8 opcode;
+	volatile int status;
+	int num_init_io;
+	int num_complete_io;
 
-                void* private_data;
-                void* cb_userdata;
-                void (*aio_callback)(const struct nvmed_aio_ctx *context, void *userdata);
-        } NVMED_AIO_CTX;
+	void* private_data;
+	void* cb_userdata;
+	void (*aio_callback)(const struct nvmed_aio_ctx *context, void *userdata);
+} NVMED_AIO_CTX;
 
-        NVMED* nvmed_open(const char* PATH);
-        int nvmed_close(NVMED*);
-        int nvmed_feature_get(NVMED* nvmed, int feature);
-        int nvmed_feature_set(NVMED* nvmed, int feature, int value);
+NVMED* nvmed_open(const char* PATH);
+int nvmed_close(NVMED*);
+int nvmed_feature_get(NVMED* nvmed, int feature);
+int nvmed_feature_set(NVMED* nvmed, int feature, int value);
 
-        void nvmed_queue_create(NVMED*, int);
-        int nvmed_queue_destroy(NVMED_QUEUE*);
+void nvmed_queue_create(NVMED*, int);
+int nvmed_queue_destroy(NVMED_QUEUE*);
 
-        NVMED_HANDLE* nvmed_handle_create(NVMED_QUEUE*, int);
-        int nvmed_handle_destroy(NVMED_HANDLE*);
+NVMED_HANDLE* nvmed_handle_create(NVMED_QUEUE*, int);
+int nvmed_handle_destroy(NVMED_HANDLE*);
 
-        NVMED_HANDLE* nvmed_handle_create_mq(NVMED_QUEUE**, int, int,
-                                             NVMED_QUEUE* (*func)(NVMED_HANDLE*, u8, unsigned long, unsigned int));
-        int nvmed_handle_destroy_mq(NVMED_HANDLE*);
+NVMED_HANDLE* nvmed_handle_create_mq(NVMED_QUEUE**, int, int,
+		NVMED_QUEUE* (*func)(NVMED_HANDLE*, u8, unsigned long, unsigned int));
+int nvmed_handle_destroy_mq(NVMED_HANDLE*);
 
-        int nvmed_handle_feature_get(NVMED_HANDLE*, int);
-        int nvmed_handle_feature_set(NVMED_HANDLE*, int, int);
+int nvmed_handle_feature_get(NVMED_HANDLE*, int);
+int nvmed_handle_feature_set(NVMED_HANDLE*, int, int);
 
-        void* nvmed_get_buffer(NVMED*, unsigned int num_pages);
-        void nvmed_put_buffer(void*);
+void* nvmed_get_buffer(NVMED*, unsigned int num_pages);
+void nvmed_put_buffer(void*);
 
-        off_t nvmed_lseek(NVMED_HANDLE*, off_t, int);
-        ssize_t nvmed_read(NVMED_HANDLE*, void*, size_t);
-        ssize_t nvmed_write(NVMED_HANDLE*, void*, size_t);
+off_t nvmed_lseek(NVMED_HANDLE*, off_t, int);
+ssize_t nvmed_read(NVMED_HANDLE*, void*, size_t);
+ssize_t nvmed_write(NVMED_HANDLE*, void*, size_t);
 
-        int nvmed_flush(NVMED_HANDLE*);
-        int nvmed_discard(NVMED_HANDLE*, unsigned long, unsigned int);
+int nvmed_flush(NVMED_HANDLE*);
+int nvmed_discard(NVMED_HANDLE*, unsigned long, unsigned int);
 
-        int nvmed_aio_queue_submit(NVMED_HANDLE*);
-        int nvmed_aio_read(NVMED_AIO_CTX*);
-        int nvmed_aio_write(NVMED_AIO_CTX*);
-        int nvmed_aio_handle_complete(NVMED_HANDLE*);
+int nvmed_aio_queue_submit(NVMED_HANDLE*);
+int nvmed_aio_read(NVMED_AIO_CTX*);
+int nvmed_aio_write(NVMED_AIO_CTX*);
+int nvmed_aio_handle_complete(NVMED_HANDLE*);
 
-        int nvmed_set_user_quota(NVMED*, uid_t, unsigned int, 
-                                 unsigned int*, unsigned int *);
-        int nvmed_get_user_quota(NVMED*, uid_t, 
-                                 unsigned int*, unsigned int *);
+int nvmed_set_user_quota(NVMED*, uid_t, unsigned int, 
+		unsigned int*, unsigned int *);
+int nvmed_get_user_quota(NVMED*, uid_t, 
+		unsigned int*, unsigned int *);
 
-        int virt_to_phys(NVMED* nvmed, void* addr, u64* paArr, unsigned int num_bytes);
+int virt_to_phys(NVMED* nvmed, void* addr, u64* paArr, unsigned int num_bytes);
 
 #ifdef __cplusplus
 }
